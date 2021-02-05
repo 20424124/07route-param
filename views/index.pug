@@ -1,0 +1,12 @@
+
+ul
+ each todo in todos
+   li= todo.text
+    span &emsp;
+    a(href='/todos/' + todo.id +"/delete") Delete
+ else
+  li There are no values
+  
+a(href='/todos/create') Create New Todo
+  
+
